@@ -9,10 +9,10 @@ import SwiftUI
 
 @main
 struct Rilabs_UITestingApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-              .environmentObject(UserState())
-        }
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
+        .environmentObject(UserState())
     }
+  }
 }

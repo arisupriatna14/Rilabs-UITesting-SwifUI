@@ -14,8 +14,8 @@ class ContentViewTest: XCTestCase {
   
   func testExample() throws {
     let subject = ContentView()
-    let text1 = try subject.inspect().vStack().text(0).string()
-    let text2 = try subject.inspect().vStack().text(1).string()
+    let text1 = try subject.inspect().navigationView().vStack(0).text(0).string()
+    let text2 = try subject.inspect().navigationView().vStack(0).text(1).string()
 
     XCTAssertEqual(text1, "Hello, world!")
     XCTAssertEqual(text2, "Hello, ari!")

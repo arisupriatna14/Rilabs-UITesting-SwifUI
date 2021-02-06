@@ -9,12 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
   var body: some View {
-    VStack {
-      Text("Hello, world!")
-      Text("Hello, ari!")
-      GreetingView()
+    NavigationView {
+      VStack {
+        Text("Hello, world!")
+        Text("Hello, ari!")
+        GreetingView()
+        NavigationLink(destination: CustomTextFieldView()) {
+          Text("Masuk Detail Page")
+        }
+        .accessibilityIdentifier("tapNavigateToDetailPage")
+      }
+      .padding()
     }
-    .padding()
   }
 }
 

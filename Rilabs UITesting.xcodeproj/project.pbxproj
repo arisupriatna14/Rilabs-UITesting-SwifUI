@@ -17,6 +17,9 @@
 		06345CAD25CEF3D100DF7647 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06345C7625CEF15F00DF7647 /* ContentView.swift */; };
 		06345CE925CEF6BF00DF7647 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 06345CE825CEF6BF00DF7647 /* ViewInspector */; };
 		06345CF125CEFC0500DF7647 /* GreetingViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06345CF025CEFC0500DF7647 /* GreetingViewTest.swift */; };
+		06345CFC25CF15C200DF7647 /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06345CFB25CF15C200DF7647 /* CustomTextFieldView.swift */; };
+		06345CFD25CF15C200DF7647 /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06345CFB25CF15C200DF7647 /* CustomTextFieldView.swift */; };
+		06345D0225CF15FA00DF7647 /* CustomTextFieldViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06345D0125CF15FA00DF7647 /* CustomTextFieldViewTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,8 @@
 		06345C9325CEF16000DF7647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06345CA825CEF3B400DF7647 /* ContentViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTest.swift; sourceTree = "<group>"; };
 		06345CF025CEFC0500DF7647 /* GreetingViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewTest.swift; sourceTree = "<group>"; };
+		06345CFB25CF15C200DF7647 /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
+		06345D0125CF15FA00DF7647 /* CustomTextFieldViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldViewTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +113,7 @@
 				06345C7825CEF16000DF7647 /* Assets.xcassets */,
 				06345C7D25CEF16000DF7647 /* Info.plist */,
 				06345C7A25CEF16000DF7647 /* Preview Content */,
+				06345CFB25CF15C200DF7647 /* CustomTextFieldView.swift */,
 			);
 			path = "Rilabs UITesting";
 			sourceTree = "<group>";
@@ -136,6 +142,7 @@
 				06345C9325CEF16000DF7647 /* Info.plist */,
 				06345CA825CEF3B400DF7647 /* ContentViewTest.swift */,
 				06345CF025CEFC0500DF7647 /* GreetingViewTest.swift */,
+				06345D0125CF15FA00DF7647 /* CustomTextFieldViewTest.swift */,
 			);
 			path = "Rilabs UITestingUITests";
 			sourceTree = "<group>";
@@ -286,6 +293,7 @@
 			files = (
 				06345C7725CEF15F00DF7647 /* ContentView.swift in Sources */,
 				06345C7525CEF15F00DF7647 /* Rilabs_UITestingApp.swift in Sources */,
+				06345CFC25CF15C200DF7647 /* CustomTextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +312,8 @@
 				06345CA925CEF3B400DF7647 /* ContentViewTest.swift in Sources */,
 				06345CF125CEFC0500DF7647 /* GreetingViewTest.swift in Sources */,
 				06345C9225CEF16000DF7647 /* Rilabs_UITestingUITests.swift in Sources */,
+				06345D0225CF15FA00DF7647 /* CustomTextFieldViewTest.swift in Sources */,
+				06345CFD25CF15C200DF7647 /* CustomTextFieldView.swift in Sources */,
 				06345CAD25CEF3D100DF7647 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
