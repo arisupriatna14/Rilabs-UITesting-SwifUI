@@ -21,13 +21,6 @@ class ContentViewTest: XCTestCase {
     XCTAssertEqual(text2, "Hello, ari!")
   }
   
-  func testGreetsWithText() throws {
-    let subject = ContentView()
-    let text = try subject.inspect().vStack().view(GreetingView.self, 2).text().string()
-    
-    XCTAssertEqual(text, "Hello, ari!")
-  }
-  
   func testContaintsGreetingsView() throws {
     let subject = ContentView()
     let greetingView = try subject.inspect().vStack().view(GreetingView.self, 2)
