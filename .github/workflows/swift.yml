@@ -14,6 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Running UI Testing
-      run: xcodebuild test-without-building -project "Rilabs UITesting".xcodeproj -scheme "Rilabs UITesting" -destination "platform=iOS Simulator,name=iPhone 11 Pro"
+      run: xcodebuild test -project "Rilabs UITesting".xcodeproj -scheme "Rilabs UITesting" -destination "platform=iOS Simulator,name=iPhone 11 Pro"
     - name: Build iOS App
       run: xcodebuild -project "Rilabs UITesting".xcodeproj -scheme "Rilabs UITesting" -destination "platform=iOS Simulator,name=iPhone 11 Pro"
