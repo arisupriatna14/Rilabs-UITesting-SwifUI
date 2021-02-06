@@ -8,14 +8,55 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
+  var body: some View {
+    VStack {
+      Text("Hello, world!")
+      Text("Hello, ari!")
+      GreetingView()
     }
+    .padding()
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+  static var previews: some View {
+    ContentView()
+  }
+}
+
+class UserState: ObservableObject {
+  @Published var loggedIn: Bool
+  @Published var userName: String
+  
+  init(userName: String = "", loggedIn: Bool = false) {
+    self.userName = userName
+    self.loggedIn = loggedIn
+  }
+}
+
+struct GreetingView: View {
+  
+  @State var isLogout: Bool = false
+  @EnvironmentObject var userState: UserState
+  // MARK: for ViewInspector testing purpose
+  internal var didAppear: ((Self) -> Void)?
+  
+  var body: some View {
+    VStack {
+      if userState.loggedIn {
+        Text("Hello, \(userState.userName)!")
+      } else {
+        Text("Hello, world!")
+      }
+      Button {
+        self.isLogout.toggle()
+      } label: {
+        Text("Logout")
+      }
     }
+    .onAppear {
+      // MARK: for ViewInspector testing purpose
+      self.didAppear?(self)
+    }
+  }
 }

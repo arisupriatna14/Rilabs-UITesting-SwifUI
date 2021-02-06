@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		06345C7C25CEF16000DF7647 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06345C7B25CEF16000DF7647 /* Preview Assets.xcassets */; };
 		06345C8725CEF16000DF7647 /* Rilabs_UITestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06345C8625CEF16000DF7647 /* Rilabs_UITestingTests.swift */; };
 		06345C9225CEF16000DF7647 /* Rilabs_UITestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06345C9125CEF16000DF7647 /* Rilabs_UITestingUITests.swift */; };
+		06345CA925CEF3B400DF7647 /* ContentViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06345CA825CEF3B400DF7647 /* ContentViewTest.swift */; };
+		06345CAD25CEF3D100DF7647 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06345C7625CEF15F00DF7647 /* ContentView.swift */; };
+		06345CE925CEF6BF00DF7647 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 06345CE825CEF6BF00DF7647 /* ViewInspector */; };
+		06345CF125CEFC0500DF7647 /* GreetingViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06345CF025CEFC0500DF7647 /* GreetingViewTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,8 @@
 		06345C8D25CEF16000DF7647 /* Rilabs UITestingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rilabs UITestingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06345C9125CEF16000DF7647 /* Rilabs_UITestingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rilabs_UITestingUITests.swift; sourceTree = "<group>"; };
 		06345C9325CEF16000DF7647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06345CA825CEF3B400DF7647 /* ContentViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTest.swift; sourceTree = "<group>"; };
+		06345CF025CEFC0500DF7647 /* GreetingViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06345CE925CEF6BF00DF7647 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +86,7 @@
 				06345C8525CEF16000DF7647 /* Rilabs UITestingTests */,
 				06345C9025CEF16000DF7647 /* Rilabs UITestingUITests */,
 				06345C7225CEF15F00DF7647 /* Products */,
+				06345CC625CEF4D300DF7647 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,8 +134,17 @@
 			children = (
 				06345C9125CEF16000DF7647 /* Rilabs_UITestingUITests.swift */,
 				06345C9325CEF16000DF7647 /* Info.plist */,
+				06345CA825CEF3B400DF7647 /* ContentViewTest.swift */,
+				06345CF025CEFC0500DF7647 /* GreetingViewTest.swift */,
 			);
 			path = "Rilabs UITestingUITests";
+			sourceTree = "<group>";
+		};
+		06345CC625CEF4D300DF7647 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +163,8 @@
 			dependencies = (
 			);
 			name = "Rilabs UITesting";
+			packageProductDependencies = (
+			);
 			productName = "Rilabs UITesting";
 			productReference = 06345C7125CEF15F00DF7647 /* Rilabs UITesting.app */;
 			productType = "com.apple.product-type.application";
@@ -182,6 +201,9 @@
 				06345C8F25CEF16000DF7647 /* PBXTargetDependency */,
 			);
 			name = "Rilabs UITestingUITests";
+			packageProductDependencies = (
+				06345CE825CEF6BF00DF7647 /* ViewInspector */,
+			);
 			productName = "Rilabs UITestingUITests";
 			productReference = 06345C8D25CEF16000DF7647 /* Rilabs UITestingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -217,6 +239,9 @@
 				Base,
 			);
 			mainGroup = 06345C6825CEF15F00DF7647;
+			packageReferences = (
+				06345CE725CEF6BF00DF7647 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = 06345C7225CEF15F00DF7647 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -276,7 +301,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06345CA925CEF3B400DF7647 /* ContentViewTest.swift in Sources */,
+				06345CF125CEFC0500DF7647 /* GreetingViewTest.swift in Sources */,
 				06345C9225CEF16000DF7647 /* Rilabs_UITestingUITests.swift in Sources */,
+				06345CAD25CEF3D100DF7647 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		06345CE725CEF6BF00DF7647 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		06345CE825CEF6BF00DF7647 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06345CE725CEF6BF00DF7647 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 06345C6925CEF15F00DF7647 /* Project object */;
 }
