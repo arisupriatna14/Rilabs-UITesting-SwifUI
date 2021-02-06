@@ -23,7 +23,7 @@ class ContentViewTest: XCTestCase {
   
   func testContaintsGreetingsView() throws {
     let subject = ContentView()
-    let greetingView = try subject.inspect().vStack().view(GreetingView.self, 2)
+    let greetingView = try subject.inspect().navigationView().vStack(0).view(GreetingView.self, 2)
     
     XCTAssertNotNil(greetingView)
   }
